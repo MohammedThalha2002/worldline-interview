@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+    <!-- <link rel="stylesheet" href="../static/styles.css" /> -->
+    <title>REGISTRATION FORM</title>
+  </head>
+  <body>
+    <div id="parent">
+      <button id="show-records">SHOW RECORDS</button>
+      <div>
+        <h1 class="heading">EMPLOYEE REGISTRATION FORM</h1>
+      </div>
+      <div>
+        <form id="form">
+          <!-- LEFT -->
+          <div class="left">
+            <div class="form-div">
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-div">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-div">
+              <label for="dob">DOB</label>
+              <input type="date" id="dob" name="dob" required />
+            </div>
+            <div class="form-div">
+              <label for="gender">GENDER</label>
+              <input type="text" id="gender" name="gender" required />
+            </div>
+            <div class="form-div">
+              <label for="phone">PHONE</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+          </div>
+          <!-- RIGHT -->
+          <div class="right">
+            <div class="form-div">
+              <label for="job">JOB TITLE</label>
+              <input type="text" id="job" name="job" required />
+            </div>
+            <div class="form-div">
+              <label for="quali">QUALIFICATION</label>
+              <input type="text" id="quali" name="quali" required />
+            </div>
+            <div class="form-div">
+              <label for="doj">DATE OF JOINING</label>
+              <input type="date" id="doj" name="doj" required />
+            </div>
+            <div class="form-div">
+              <label for="exp">EXPERIENCE</label>
+              <input type="number" id="exp" name="exp" required />
+            </div>
+          </div>
+
+          <button type="submit" id="submit-btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"
+      integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script th:src="@{/index.js}"></script>
+    <!-- <script src="../static/index.js"></script> -->
+  </body>
+</html>

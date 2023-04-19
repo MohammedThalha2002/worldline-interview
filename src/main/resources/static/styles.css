@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: bisque;
+    font-family: 'Poppins', sans-serif;
+}
+
+#show-records{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+#parent {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.heading {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#form {
+    width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    border-radius: 14px;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-div {
+    display: flex;
+    margin: 10px;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.left {
+    margin: 10px;
+}
+
+#submit-btn {
+    position: absolute;
+    bottom: 30px;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+
+.divvv{
+    border: 2px solid black;
+    margin: 3px;
+}
+
+.records {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
