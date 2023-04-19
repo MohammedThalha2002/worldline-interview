@@ -54,10 +54,10 @@ async function postdetails() {
       name.value = "";
       email.value = "";
       dob.value = "";
-      gegender.value = "";
-      pphone.value = "";
+      gender.value = "";
+      phone.value = "";
       job.value = "";
-      qualificaquali.value = "";
+      quali.value = "";
       doj.value = "";
       exp.value = "";
     })
