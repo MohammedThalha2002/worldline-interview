@@ -35,11 +35,11 @@ function calculateDOB(date) {
 }
 
 function calculateTotalExp(date, exp) {
-//   console.log("JOINING DATE", date, "previous exp :", exp);
+  //   console.log("JOINING DATE", date, "previous exp :", exp);
   var joinedDate = new Date(date);
   var difference = Date.now() - joinedDate.getTime();
   var expDate = new Date(difference);
   var calculatedExp = Math.abs(expDate.getUTCFullYear() - 1970);
-//   console.log(calculatedExp);
-  return calculatedExp + exp;
+  //   console.log(calculatedExp);
+  return calculatedExp + parseInt(exp);
 }

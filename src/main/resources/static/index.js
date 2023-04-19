@@ -50,6 +50,16 @@ async function postdetails() {
     .post("http://13.233.230.132:8080/post-details", data)
     .then((res) => {
       console.log(res.data);
+      alert("Posted Successfully");
+      name.value = "";
+      email.value = "";
+      dob.value = "";
+      gegender.value = "";
+      pphone.value = "";
+      job.value = "";
+      qualificaquali.value = "";
+      doj.value = "";
+      exp.value = "";
     })
     .catch((err) => {
       console.log(err);
